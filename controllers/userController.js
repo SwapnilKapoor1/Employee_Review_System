@@ -72,6 +72,7 @@ export const createAccount = async (req, res) => {
 // create session
 export const createSession = (req, res) => {
     const user = req.user;
+    console.log(req);
 
     req.flash('success', 'Welcome, You are logged in');
     if (user.role === 'Admin') {

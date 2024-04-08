@@ -11,16 +11,15 @@ import bcrypt from 'bcryptjs';
 // user model for database
 import User from '../models/User.js';
 
-
-
 // creating new Local Strategy
 passport.use(new LocalStrategy(
     // reading username as email
     {
-        usernameField:'email'
+        usernameField:'email',
+        passReqToCallback: true
     },
     // callback function
-    async (email, password, done) => {
+    async (req,email, password, done) => {
 
         // finding user with email in side the database
         const user = await User.findOne({ email: email })
@@ -33,6 +32,7 @@ passport.use(new LocalStrategy(
             // if password doesn't match
             if (!found) {
                 // return with message
+
                 return done(null, false, { message: 'Incorrect password.' });
             }
 

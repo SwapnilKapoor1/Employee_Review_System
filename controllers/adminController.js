@@ -1,9 +1,8 @@
-// user's model (database)
-import Feedback from '../models/Feedback.js';
-import User from '../models/User.js';
 
 // feedback's model (database)
-
+import Feedback from '../models/Feedback.js';
+// user's model (database)
+import User from '../models/User.js';
 
 // for password encryption
 import bcrypt from 'bcryptjs';

@@ -2,6 +2,7 @@ import express from 'express';
 // import passport
 import passport from '../config/passport_local.js';
 import { createAccount, createSession, home, signUp, signout } from '../controllers/userController.js';
+
 // import user controller
 
 // create new router
@@ -22,7 +23,7 @@ userRouter.post('/create-session',
         // strategy
         'local',
         // if signing in fails
-        { failureRedirect: '/' }),
+        { failureRedirect: '/' ,failureFlash: true}),
 
     // controller
     createSession);
