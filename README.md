@@ -19,17 +19,13 @@ Authentication:
 
 Admin Privileges: Only admins have the authority to register new employees and assign admin roles.
 
-Setup Instructions
+**Setup Instructions**
     To set up the Employee Review System on your local machine, follow these steps:
 
-Clone Repository: Clone this repository to your local machine
-
-Install Dependencies : npm i
-
-Set Environment Variables: Create a .env file in the root directory and configure environment variables such as database connection string, session secret and port.
-
-Start the Server: Start the server by running the following command : node index.js
-
-Access the Application: Open a web browser and navigate to http://localhost:<port> to access the Employee Review System. You should be directed to the login page where you can log in with your credentials.
+1. Clone Repository: Clone this repository to your local machine
+2. Install Dependencies : npm i
+3. Set Environment Variables: Create a .env file in the root directory and configure environment variables such as database connection string, session secret and port.
+4. Start the Server: Start the server by running the following command : node index.js
+5. Access the Application: Open a web browser and navigate to http://localhost:<port> to access the Employee Review System. You should be directed to the login page where you can log in with your credentials.
 
 My deployment: https://employee-review-system-1-ni2y.onrender.com
