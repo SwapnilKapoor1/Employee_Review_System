@@ -1,8 +1,7 @@
 // user's model 
+import Feedback from '../models/Feedback.js';
 import User from '../models/User.js';
 
-// feedback model
-import Feedback from '../models/Feedback.js';
 
 // render the employee's dashboard
 // also show review assigned and feedback given to the employee
