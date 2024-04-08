@@ -8,10 +8,8 @@ import { connectWithDb } from './config/mongoose.js';
 connectWithDb();
 import router  from './routes/index.js';
 // express
-import express, { Router } from 'express';
+import express from 'express';
 
-// passport local strategy
-import passportConfig from './config/passport_local.js';
 // passport
 import passport from 'passport';
 

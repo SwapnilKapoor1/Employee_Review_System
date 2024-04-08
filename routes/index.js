@@ -2,21 +2,21 @@
 import express from 'express';
 
 // import user routes
-import userRoutes from './user.js';
+import userRouter from './user.js';
 // import admin routes
-import adminRoutes from './admin.js';
+import adminRouter from './admin.js';
 // import employee routes
-import employeeRoutes from './employee.js';
+import employeeRouter from './employee.js';
 
 // create new router
 const router = express.Router();
 
 // for user related routes
-router.use('/', userRoutes);
+router.use('/', userRouter);
 // for routes related to admin
-router.use('/dashboard/admin', adminRoutes);
+router.use('/dashboard/admin', adminRouter);
 // for routes related to employee
-router.use('/dashboard/employee', employeeRoutes);
+router.use('/dashboard/employee', employeeRouter);
 
 // export the router
 export default router;

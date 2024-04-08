@@ -2,7 +2,7 @@
 import express from 'express';
 
 // creating router
-const router = express.Router();
+const adminRouter = express.Router();
 
 // passport for authentication
 import passport from '../config/passport_local.js';
@@ -11,7 +11,7 @@ import { addEmployee, addEmployeeForm, admin, assignReview, deleteEmployee, upda
 // controller
 
 // to render the dashboard
-router.get('/',
+adminRouter.get('/',
     // to check whether user is logged in or not
     passport.checkAuthentication,
     // to check whether the user is admin or not
@@ -20,7 +20,7 @@ router.get('/',
     admin);
 
 // to delete an employee
-router.get('/delete/',
+adminRouter.get('/delete/',
     // to check whether user is logged in or not
     passport.checkAuthentication,
     // to check whether the user is admin or not
@@ -29,7 +29,7 @@ router.get('/delete/',
     deleteEmployee);
 
 // to render the update form
-router.get('/updateForm',
+adminRouter.get('/updateForm',
     // to check whether user is logged in or not
     passport.checkAuthentication,
     // to check whether the user is admin or not
@@ -38,7 +38,7 @@ router.get('/updateForm',
     updateForm);
 
 // to update an employee's data
-router.post('/update',
+adminRouter.post('/update',
     // to check whether user is logged in or not
     passport.checkAuthentication,
     // to check whether the user is admin or not
@@ -47,7 +47,7 @@ router.post('/update',
    updateEmployee);
 
 // to render add employee form
-router.get('/addEmployee',
+adminRouter.get('/addEmployee',
     // to check whether user is logged in or not
     passport.checkAuthentication,
     // to check whether the user is admin or not
@@ -56,7 +56,7 @@ router.get('/addEmployee',
    addEmployeeForm);
 
 // for creating a new user by admin
-router.post('/createEmployee',
+adminRouter.post('/createEmployee',
     // to check whether user is logged in or not
     passport.checkAuthentication,
     // to check whether the user is admin or not
@@ -65,7 +65,7 @@ router.post('/createEmployee',
     addEmployee);
 
 // assign review to an employee
-router.post('/assignReview',
+adminRouter.post('/assignReview',
     // to check whether user is logged in or not
     passport.checkAuthentication,
     // to check whether the user is admin or not
@@ -74,4 +74,4 @@ router.post('/assignReview',
     assignReview);
 
 // export router
-export default router;
+export default adminRouter;
