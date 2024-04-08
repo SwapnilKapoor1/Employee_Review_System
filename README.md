@@ -26,6 +26,6 @@ Admin Privileges: Only admins have the authority to register new employees and a
 2. Install Dependencies : npm i
 3. Set Environment Variables: Create a .env file in the root directory and configure environment variables such as database connection string, session secret and port.
 4. Start the Server: Start the server by running the following command : node index.js
-5. Access the Application: Open a web browser and navigate to http://localhost:<port> to access the Employee Review System. You should be directed to the login page where you can log in with your credentials.
+5. Access the Application: Open a web browser and navigate to http://localhost: \Port\ to access the Employee Review System. You should be directed to the login page where you can log in with your credentials.
 
 My deployment: https://employee-review-system-1-ni2y.onrender.com
