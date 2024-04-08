@@ -3,15 +3,20 @@
 The Employee Review System is a web application designed to facilitate performance reviews and feedback management within an organization. It provides functionalities for both administrators and employees to manage performance reviews, submit feedback, and perform other related tasks.
 
 Features
-Admin View
-    Add/Remove/Update/View Employees: Admins can add, remove, update, and view employee profiles.
-    Add/Update/View Performance Reviews: Admins can create, modify, and view performance reviews for employees.
-    Assign Employees to Reviews: Admins can assign employees to participate in another employee's performance review.
-Employee View
-    List of Performance Reviews Requiring Feedback: Employees can view a list of performance reviews that require their feedback.
-    Submit Feedback: Employees can submit feedback for performance reviews they are involved in.
-Authentication
+Admin View:
+
+    1. Add/Remove/Update/View Employees: Admins can add, remove, update, and view employee profiles.
+    2. Add/Update/View Performance Reviews: Admins can create, modify, and view performance reviews for employees.
+    3. Assign Employees to Reviews: Admins can assign employees to participate in another employee's performance review.
+Employee View:
+
+   1. List of Performance Reviews Requiring Feedback: Employees can view a list of performance reviews that require their feedback.
+   2. Submit Feedback: Employees can submit feedback for performance reviews they are involved in.
+
+Authentication:
+    
     Single Login for Admin and Employee: Both admins and employees use the same login page to access the system.
+
 Admin Privileges: Only admins have the authority to register new employees and assign admin roles.
 
 Setup Instructions
